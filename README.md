@@ -9,8 +9,9 @@ Am on the Back End Track specifically Python #Be-Python
 ```python
 class Category:
 
-
-def display_spent_chart(categories):
+    def __init__(self, category, amount):
+        self.amount = 0
+        self.category = category
 ```
 
 ## Task
