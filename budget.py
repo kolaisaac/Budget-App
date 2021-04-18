@@ -22,13 +22,16 @@ print(food.compute_balance())
 
 clothing = Category("Clothing", 2500)
 food.transfering_balance(150, clothing)
-clothing.withdraw_fund(75)
+clothing.withdraw_fund(20)
+print(clothing.compute_balance())
 
 entertainment = Category("Entartainment", 500)
 entertainment.depost_fund(200)
 entertainment.withdraw_fund(120)
+print(entertainment.compute_balance())
 
-print(food)
-print(clothing)
-print(entertainment)
+
+print(food.depost_fund(200))
+print(clothing.withdraw_fund(750))
+print(entertainment.transfering_balance(120, "Food"))
 
